@@ -3,6 +3,12 @@
   "description": "Component to iterate an array round robin.",
   "version": "0.0.1",
   "repo": "jprichardson/rr",
-  "keywords": [],
+  "keywords": [
+    "array",
+    "utility",
+    "iterate",
+    "round robin",
+    "collection"
+  ],
   "main": "lib/rr.js"
 }

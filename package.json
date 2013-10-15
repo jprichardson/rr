@@ -10,7 +10,13 @@
     "type": "git",
     "url": "https://github.com/jprichardson/rr"
   },
-  "keywords": [],
+  "keywords": [
+    "array",
+    "utility",
+    "iterate",
+    "round robin",
+    "collection"
+  ],
   "author": "JP Richardson",
   "license": "MIT",
   "devDependencies": {
