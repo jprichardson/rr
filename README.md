@@ -39,7 +39,7 @@ Install
 Usage
 -----
 
-### rr(array [,lastIndex])
+### rr(array, [lastIndex])
 
 
 ### Example
