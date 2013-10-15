@@ -1,0 +1,21 @@
+{
+  "name": "rr",
+  "version": "0.0.1",
+  "description": "Component to iterate an array round robin.",
+  "main": "lib/rr.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jprichardson/rr"
+  },
+  "keywords": [],
+  "author": "JP Richardson",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "*",
+    "testutil": "~0.6.0"
+  },
+  "dependencies": {}
+}

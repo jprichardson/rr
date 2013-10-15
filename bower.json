@@ -1,0 +1,8 @@
+{
+  "name": "rr",
+  "description": "Component to iterate an array round robin.",
+  "version": "0.0.1",
+  "repo": "jprichardson/rr",
+  "keywords": [],
+  "main": "lib/rr.js"
+}
