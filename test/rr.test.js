@@ -70,5 +70,23 @@ describe('+ rr()', function() {
       EQ (rr(arr, 100), 'a')
     })
   })
+
+  describe('> when toString() is called on the array after rr', function() {
+    it('return the vanilla string representation', function() {
+      var arr = ['a', 'b', 'c']
+      rr(arr)
+
+      EQ (arr.toString(), 'a,b,c')
+    })
+  })
+
+  describe('> when JSON.stringify() is called on the array after rr', function() {
+    it('return the vanilla JSON representation', function() {
+      var arr = ['a', 'b', 'c']
+      rr(arr)
+
+      EQ (JSON.stringify(arr), '["a","b","c"]')
+    })
+  })
 })
 
