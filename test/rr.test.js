@@ -71,6 +71,61 @@ describe('+ rr()', function() {
     })
   })
 
+  describe('> when the next two elements got removed from the array of length 3', function() {
+    it('should return the last element', function() {
+      var arr = ['a', 'b', 'c']
+      rr(arr)
+      rr.splice(arr, 0, 2)
+      EQ (rr(arr), 'c')
+    })
+  })
+
+  describe('> when the last two elements got removed from the array of length 3', function() {
+    it('should return the first element', function() {
+      var arr = ['a', 'b', 'c']
+      rr(arr)
+      rr.splice(arr, 1, 2)
+      EQ (rr(arr), 'a')
+    })
+  })
+
+  describe('> when the first and the last elements got removed from the array of length 3', function() {
+    it('should return the second element', function() {
+      var arr = ['a', 'b', 'c']
+      rr(arr)
+      rr.splice(arr, 0, 1)
+      rr.splice(arr, 1, 1)
+      EQ (rr(arr), 'b')
+    })
+  })
+
+  describe('> when the current element (n) got removed from the array', function() {
+    it('should still return the n+1th element', function() {
+      var arr = ['a', 'b', 'c']
+      rr(arr)
+      rr.splice(arr, 0, 1)
+      EQ (rr(arr), 'b')
+    })
+  })
+
+  describe('> when the next element (n+1) got removed from the array', function() {
+    it('should return element n+2', function() {
+      var arr = ['a', 'b', 'c']
+      rr(arr)
+      rr.splice(arr, 1, 1)
+      EQ (rr(arr), 'c')
+    })
+  })
+
+  describe('> when the current element is removed from the array', function() {
+    it('should return the next element', function() {
+      var arr = ['a', 'b', 'c']
+      rr(arr)
+      rr.spliceCurrent(arr, 1)
+      EQ (rr(arr), 'b')
+    })
+  })
+
   describe('> when toString() is called on the array after rr', function() {
     it('return the vanilla string representation', function() {
       var arr = ['a', 'b', 'c']
