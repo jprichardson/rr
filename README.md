@@ -58,6 +58,12 @@ console.log(rr(list,2)) //a
 ```
 
 
+### splice(array, idx, len)
+
+
+### spliceCurrent(array, len)
+
+
 
 License
 -------
