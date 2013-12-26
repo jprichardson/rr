@@ -1,7 +1,7 @@
 {
   "name": "rr",
+  "version": "0.1.0",
   "description": "Component to iterate an array round robin.",
-  "version": "0.0.1",
   "repo": "jprichardson/rr",
   "keywords": [
     "array",
